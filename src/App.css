@@ -1,0 +1,202 @@
+.app-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef4ff 0%, #f7f7ff 50%, #edfdfa 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  padding: 24px;
+}
+
+.topbar {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+  border-radius: 22px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand-badge {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6366f1;
+}
+
+.topbar h1 {
+  margin: 6px 0 0;
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+}
+
+.nav-button {
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f4f6ff 100%);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 120px;
+  height: 120px;
+  background: rgba(99, 102, 241, 0.08);
+  border-radius: 0 0 100% 0;
+}
+
+.card-panel {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.07);
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.student-card {
+  min-height: 200px;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #fff;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.card-panel h3 {
+  margin: 6px 0 0;
+  font-size: 1.6rem;
+}
+
+.card-panel p {
+  margin: 8px 0;
+  color: #4b5563;
+}
+
+.meta {
+  font-weight: 600;
+  color: #111827;
+}
+
+.course-card {
+  min-height: 200px;
+}
+
+.course-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ecfeff;
+  color: #0f766e;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.progress-fill {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: inherit;
+}
+
+.profile-card .card-header-row {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-card .avatar {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.profile-card .meta {
+  color: #4f46e5;
+}
+
+.profile-card p:last-child {
+  position: relative;
+  z-index: 1;
+  line-height: 1.7;
+}
+
+.site-footer {
+  max-width: 1100px;
+  margin: 28px auto 0;
+  text-align: center;
+  color: #6b7280;
+  padding-bottom: 10px;
+}
